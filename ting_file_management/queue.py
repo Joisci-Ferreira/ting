@@ -19,4 +19,4 @@ class Queue:
         """Aqui irá sua implementação"""
         if(index < 0 or index > len(self.list)):
             raise IndexError
-        return self.list[index]    
+        return self.list[index]

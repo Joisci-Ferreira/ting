@@ -17,7 +17,7 @@ def process(path_file, instance):
 
     instance.enqueue(data)
     sys.stdout.write(str(data))
-    return data            
+    return data 
 
 
 def remove(instance):
@@ -27,7 +27,7 @@ def remove(instance):
 
     file_to_delete = instance.dequeue()
     file_path = file_to_delete["nome_do_arquivo"]
-    sys.stdout.write(f"Arquivo {file_path} removido com sucesso\n")   
+    sys.stdout.write(f"Arquivo {file_path} removido com sucesso\n")
 
 
 def file_metadata(instance, position):
@@ -37,4 +37,4 @@ def file_metadata(instance, position):
         sys.stdout.write(str(data_info))
         return str(data_info)
     except IndexError:
-        sys.stderr.write("Posição inválida")    
+        sys.stderr.write("Posição inválida")

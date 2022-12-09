@@ -17,8 +17,8 @@ def exists_word(word, instance):
             }
             result.append(search_result)
 
-    return result  
+    return result
+
 
 def search_by_word(word, instance):
     """Aqui irá sua implementação"""
-    
